@@ -96,7 +96,7 @@ button:active{
         margin:1rem auto;
       }
      .image img{
-        content:url('images/image-product-mobile.jpg');
+        content:url('./images/image-product-mobile.jpg');
         width:100%;
         border-radius:0.5rem 0.5rem 0 0;
     }  
