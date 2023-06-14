@@ -86,14 +86,13 @@ button:active{
 }
 @media only screen and (max-width:510px){
     body{
-        align-items:flex-start;
         padding-left:2rem;
         padding-right:2.5rem;
     }
       .container{
         width:100%;
         flex-direction:column;
-        margin:2.3rem auto;
+        margin:1rem auto;
       }
      .image img{
         content:url('./images/image-product-mobile.jpg');
