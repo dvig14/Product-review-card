@@ -87,12 +87,12 @@ button:active{
 @media only screen and (max-width:510px){
     body{
         padding-left:2rem;
-        padding-right:2.5rem;
+        padding-right:2rem;
     }
       .container{
         width:100%;
         flex-direction:column;
-        margin:1rem auto;
+        margin:auto;
       }
      .image img{
         content:url('./images/image-product-mobile.jpg');
