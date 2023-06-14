@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+     /*------Primary------*/
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    /*-------Neutral------*/
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-size:14px;
+    font-family:"Montserrat","Fraunces";
+    background:var(--Cream);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+.container{
+    width:500px;
+    background:var(--White);
+    display:flex;
+    border-radius:0.5rem;
+}
+.image img{
+    width:100%;
+    object-fit:cover;
+    border-radius:0.5rem 0 0 0.5rem;
+}
+.card-txt{
+    width:100%;
+   padding:1.5rem;
+   display:flex;
+   flex-direction:column;
+   gap:1.3rem;
+}
+.head-txt{ 
+    letter-spacing:0.25rem; 
+    color:var(--Dark-grayish-blue);
+    font-size:0.8rem;
+}
+h1{
+    font-size:2rem;
+    line-height:1.8rem;
+    color:var(--Very-dark-blue);
+}
+.text p{color:var(--Dark-grayish-blue);}
+.price{
+    display:flex;
+    align-items:center;
+    gap:0.8rem;
+}
+.price .new{
+    font-weight:700;
+    font-size:2rem;
+    color:var( --Dark-cyan);
+}
+.price .old{
+    font-size:0.8rem;
+    text-decoration:line-through;
+    color:var(--Dark-grayish-blue);
+}
+button{
+    cursor:pointer;
+    background:var( --Dark-cyan);
+    padding:1rem;
+   border-radius:0.5rem;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   gap:0.8rem;
+   border:1px solid transparent; 
+   color:var(--White);
+   font-weight:700;
+   text-align:center;
+}
+button:active{
+    background:var(--Very-dark-blue);
+}
+@media only screen and (max-width:510px){
+    body{
+        align-items:flex-start;
+        padding-left:2rem;
+        padding-right:2.5rem;
+    }
+      .container{
+        width:100%;
+        flex-direction:column;
+        margin:1rem auto;
+      }
+     .image img{
+        content:url('images/image-product-mobile.jpg');
+        width:100%;
+        border-radius:0.5rem 0.5rem 0 0;
+    }  
+    .card-txt{
+       padding:1.2rem 1.7rem;
+    }
+   
+}
